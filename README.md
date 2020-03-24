@@ -1,15 +1,15 @@
-# REALME 3 TWRP TREE BUGS LESS #
-There is sources Works for helio p60 - p70, so everything in this repository is named `spertan`
+# REALME 3 ANDROID 10 DEVICE TREE #
+There is sources Works for helio p60 - might p70, so everything in this repository is named `RMX1821`
 
-Realme 3 (codename: `spertan`) Gets under budget level wing from OPPO.
+Realme 3 (codename: `RMX1821`) Gets under budget level wing from OPPO.
 
-`spertan` released in 2019.
+`RMX1821` released in 2019.
 
 ![Realme3](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKdvY-QiTKloPDEjgWgz9gAk5VOVH31aka8kIkfBWNLXihixif)
 
 Component Type | Details
 --------------:|:-------
-Model  | RMX1821/25
+Model  | RMX1821
 CPU     | Octa-core (4x2.1 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53) Helio P70
 Chipset | MT6771 (12 nm)
 GPU     | Mali-G72 MP3
