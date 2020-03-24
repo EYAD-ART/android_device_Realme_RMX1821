@@ -4,21 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/Realme/RMX1821/RMX1821-vendor.mk)
 
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_props.mk
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-# Overlay from mtk-telephony-ext
-include vendor/mediatek/hardware/telephony-ext/overlay.mk
-
+    $(LOCAL_PATH)/overlay
+    
 # A/B
 AB_OTA_UPDATER := false
 
@@ -30,11 +25,21 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
+    
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
 
 # Init cripts
 PRODUCT_PACKAGES += \
     init.mt6771.rc \
-    fstab.mt6771
+    fstab.mt6771 \
+    init.target.rc
+    
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.spartan
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -43,27 +48,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
     $(LOCAL_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_mediatek_video.xml
-
-# Light
-PRODUCT_COPY_FILES += \
-   android.hardware.light@2.0-service.spertan.rc
-   
-# Overlay
+# KPOC
 PRODUCT_PACKAGES += \
-    DummyOverlay
+    libsuspend
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.secure_lock_screen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.secure_lock_screen.xml
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext \
-    mtk-telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
+    frameworks/native/data/etc/android.software.secure_lock_screen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.secure_lock_screen.xml \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
+    frameworks/native/data/etc/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.faketouch.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.multitouch.distinct.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
+    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.camera.xml
+    	

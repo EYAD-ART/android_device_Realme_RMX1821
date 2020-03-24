@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1821.mk
+    $(LOCAL_DIR)/aosp_RMX1821.mk
