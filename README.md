@@ -7,6 +7,14 @@ Realme 3 (codename: `RMX1821`) Gets under budget level wing from OPPO.
 
 ![Realme3](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKdvY-QiTKloPDEjgWgz9gAk5VOVH31aka8kIkfBWNLXihixif)
 
+### Patches for fix video
+- https://github.com/EYAD-ART/external_skia_src_gpu
+- https://github.com/EYAD-ART/frameworks_base_libs_hwui_surfacetexture
+
+### Patches for fix fingerprint
+- https://github.com/EYAD-ART/frameworks_base_biometrics
+
+
 Component Type | Details
 --------------:|:-------
 Model  | RMX1821
