@@ -1,4 +1,4 @@
-# REALME 3 ANDROID 10 DEVICE TREE #
+# REALME 3 ANDROID 9 DEVICE TREE #
 There is sources Works for helio p60 - might p70, so everything in this repository is named `RMX1821`
 
 Realme 3 (codename: `RMX1821`) Gets under budget level wing from OPPO.
