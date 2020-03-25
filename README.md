@@ -1,25 +1,76 @@
-# Device Tree for Oppo Realme 1
-The 3GB variant has codename CPH1861 whereas the 4/6GB variants have codename CPH1859.
+# REALME 3 ANDROID 10 DEVICE TREE #
+There is sources Works for helio p60 - might p70, so everything in this repository is named `RMX1821`
 
-### Spec Sheet
-Feature | Specification
--------:|:------------------------- 
-CPU | 2.0GHz Octa-Core MT6771 (Helio P60) 
-GPU | Mali G72-MP3
-Model | CPH1859/61 
-Codename | CPH1859/61
-Memory | 3GB/4GB/6GB RAM
-Shipped Android Version | 8.1 (Upgradable to 9.0)
-Storage | 32/64/128 GB
-Battery | 3410 mAh 
-Display | 6.0" 1080 x 2160 px 
-Camera | 13MP  
-Front Camera | 8MP
-Dimensions | 156.5 x 75.2 x 7.8 mm
-Release Date | May, 2018
- 
----
+Realme 3 (codename: `RMX1821`) Gets under budget level wing from OPPO.
 
-## Device Picture
+`RMX1821` released in 2019.
 
-![Realme 1 (17061)](https://i.gadgets360cdn.com/products/large/1532074799_635_Realme_1_db_normal_ndtv.jpg "Realme 1")
+![Realme3](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKdvY-QiTKloPDEjgWgz9gAk5VOVH31aka8kIkfBWNLXihixif)
+
+Component Type | Details
+--------------:|:-------
+Model  | RMX1821
+CPU     | Octa-core (4x2.1 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53) Helio P70
+Chipset | MT6771 (12 nm)
+GPU     | Mali-G72 MP3
+architecture | 64 bit
+Memory  | 4/6 GB RAM
+Shipped OS | ColorOS 6.0 based on Android 9.0
+Storage | 64/128 GB DDR4X (expandable storage up to 256GB (VFAT))
+Battery | Non-removable Li-Ion 4230 mAh battery
+Height | 156.1mm
+Width | 75.6mm
+Thickness | 8.3mm
+Weight | 175g (with battery)
+Display | 6.22" (16cm) IPS LCD capacitive touchscreen, 16M colors, Dewdrop Full Screen
+Aspect Ratio | 19 : 9
+Screen To Body Ratio | ~81.8%
+Pixel density | ~270 PPI
+Screen resolution | 720 x 1520 pixels
+Protection | Corning Gorilla Glass 3
+Quick charging | Yes, 10W
+Wifi | Yes, IEEE802.11 a/b/g/n/ac, dual-band, WiFi Direct, hotspot 
+Bluetooth | 4.2, A2DP, LE
+GPS | Yes, with A-GPS, GLONASS
+USB | microUSB 2.0, USB On-The-Go
+Body Build | Front glass, plastic(Polycarbonate) body
+Colours | Black, Dynamic Black, Radiant Blue
+Network support | Both SIM slots are compatible with 4G, support 4G VoLTE in both slots simultaneously
+Card | Triple Slots / dual nano-SIM
+SIM size | SIM1: Nano, SIM2: Nano
+Sensors | P/L-Sensors, Accelerometer, Gyroscope, Geomagnetic Sensor, Fingerprint (rear-mounted)
+
+
+Rear Dual Camera | AI Front Camera | Video
+----------------:|:---------------:|:-----
+13MP+2MP | 13MP | 720P/1080P, 30fps
+PDAF Fast Focusing | f/2.0 Aperture | Slo-Mo (90fps / 720p)
+f/1.8 Aperture | 1.12μm Pixels
+5P Lens | AI Beautification
+Nightscape | HDR
+Hybrid HDR | AI Beautification
+Ultra HD | AI Facial Unlock
+Chroma Boost
+Portrait Mode
+
+
+Network | Bands
+-------:|:-----
+2G | GSM 1900 / 1800 / 900 / 850 MHz
+3G | UMTS 2100 / 1900 / 900 / 850 MHz
+3G | WCDMA: 850 / 900 / 2100MHz
+3G Speed | HSDPA 42 Mbit/s / HSUPA 11 Mbit/s
+4G | TD-LTE: Bands 38 / 40 / 41 (2535-2655MHz)
+4G | FDD-LTE: Bands 1 / 3 / 5 / 8
+GPRS | Available
+EDGE | Available
+HSPA | Available
+
+Tests | Results
+-----:|:-------
+Performance | [Basemark OS II: 2104 / Basemark OS II 2.0: 2020 Basemark X: 19157](https://www.gsmarena.com/benchmark-test.php3?idPhone=9558#show)
+Display | Contrast ratio: 1464:1 (nominal), 2.918 (sunlight)
+Camera | Photo / Video
+Loudspeaker | Voice 66dB / Noise 71dB / Ring 81dB
+Audio quality | Noise -93.5dB / Crosstalk -91.6dB
+Battery life | Endurance rating 108h
