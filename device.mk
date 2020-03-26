@@ -46,10 +46,6 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_mediatek_video.xml
-
-# Light
-PRODUCT_COPY_FILES += \
-   android.hardware.light@2.0-service.spertan.rc
    
 # Overlay
 PRODUCT_PACKAGES += \
