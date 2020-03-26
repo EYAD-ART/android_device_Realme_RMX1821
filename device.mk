@@ -36,11 +36,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6771 \
     init.target.rc
     
-
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.spartan
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/mtk-kpd.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/mtk-kpd.idc \
