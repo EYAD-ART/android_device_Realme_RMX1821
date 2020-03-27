@@ -1,0 +1,24 @@
+on boot
+    # White light
+    chown system system /sys/class/leds/lcd-backlight/brightness
+
+    chown system system /sys/class/leds/lcd-backlight/blink
+    chown system system /sys/class/leds/lcd-backlight/duty_pcts
+    chown system system /sys/class/leds/lcd-backlight/pause_hi
+    chown system system /sys/class/leds/lcd-backlight/pause_lo
+    chown system system /sys/class/leds/lcd-backlight/ramp_step_ms
+    chown system system /sys/class/leds/lcd-backlight/start_idx
+
+    chmod 660 /sys/class/leds/lcd-backlight/blink
+    chmod 660 /sys/class/leds/lcd-backlight/duty_pcts
+    chmod 660 /sys/class/leds/lcd-backlight/pause_hi
+    chmod 660 /sys/class/leds/lcd-backlight/pause_lo
+    chmod 660 /sys/class/leds/lcd-backlight/ramp_step_ms
+    chmod 660 /sys/class/leds/lcd-backlight/start_idx
+
+service vendor.light-hal-2-0 /system/bin/hw/android.hardware.light@2.0-service.Realme_RMX1821
+    class hal
+    user system
+    group system
+    # shutting off lights while powering-off
+    shutdown critical

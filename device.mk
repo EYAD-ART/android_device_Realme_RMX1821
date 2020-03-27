@@ -47,6 +47,14 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     DummyOverlay
+    
+    # Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.Realme_RMX1821
+    
+    # Doze
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # Permissions
 PRODUCT_COPY_FILES += \
