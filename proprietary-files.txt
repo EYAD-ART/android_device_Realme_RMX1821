@@ -1,6 +1,3 @@
-# Hotspot
-bin/netd|
-
 # Notchsize
 -app/Notchsize/Notchsize.apk
 
