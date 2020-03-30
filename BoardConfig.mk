@@ -92,6 +92,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 # Soong
 PRODUCT_SOONG_NAMESPACES += vendor/Realme/RMX1821
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+
 # Treble
 BOARD_VNDK_VERSION := current
 PRODUCT_TARGET_VNDK_VERSION := 28
