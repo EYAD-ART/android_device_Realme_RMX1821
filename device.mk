@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.biometrics.fingerprint@2.1-service.realme_mt6771
+    android.hardware.biometrics.fingerprint@2.1-service.oppo
 
 # Permissions
 PRODUCT_COPY_FILES += \
