@@ -7,7 +7,7 @@ etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 lib/libsysenv_system.so
 
-# Nfc
+# another stuff
 -app/Nfc_st/Nfc_st.apk
 bin/nfcstackp
 etc/nfcee_access.xml
