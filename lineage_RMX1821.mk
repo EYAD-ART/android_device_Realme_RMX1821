@@ -19,7 +19,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_RMX1821
 PRODUCT_DEVICE := RMX1821
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := RMX1821
+PRODUCT_MODEL := Realme 3
 PRODUCT_MANUFACTURER := oppo
 
 # Product characteristics
