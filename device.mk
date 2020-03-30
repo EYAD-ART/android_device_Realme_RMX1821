@@ -56,6 +56,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeParts
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.biometrics.fingerprint@2.1-service.realme_mt6771
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.secure_lock_screen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.secure_lock_screen.xml
