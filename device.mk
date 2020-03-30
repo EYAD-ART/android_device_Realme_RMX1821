@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     
     # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.Realme_RMX1821
+    android.hardware.light@2.0-service-mediatek.rc
     
     # Doze
 PRODUCT_PACKAGES += \
