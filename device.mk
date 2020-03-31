@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1 \
     android.hardware.biometrics.fingerprint@2.1-service.oppo
+    
+    # Universal realme3CutoutOverlay
+PRODUCT_PACKAGES += \
+    realme3stable
 
 # Permissions
 PRODUCT_COPY_FILES += \
